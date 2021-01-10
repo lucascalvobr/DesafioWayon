@@ -3,7 +3,7 @@
     bottom: 0;
     display: flex;
     justify-content: flex-end;
-    background-color: #eb4034;
+    /* background-color: #eb4034; */
 }
 
 .footer>span {
@@ -12,5 +12,5 @@
 }
 
 .footer span {
-    color: white;
+    color: black;
 }

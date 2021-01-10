@@ -17,7 +17,11 @@ import  { MatCardModule} from '@angular/material/card';
 import { UsersCrudComponent } from './views/users-crud/users-crud.component';
 import { UsersReadComponent } from './components/users/users-read/users-read.component';
 import { HttpClientModule } from "@angular/common/http";
-import { MatSnackBarModule } from "@angular/material/snack-bar"
+import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { UsersRead2Component } from './components/users/users-read2/users-read2.component'
 
 @NgModule({
   declarations: [
@@ -27,7 +31,9 @@ import { MatSnackBarModule } from "@angular/material/snack-bar"
     NavComponent,
     HomeComponent,
     UsersCrudComponent,
-    UsersReadComponent
+    UsersReadComponent,
+
+    UsersRead2Component
   ],
   imports: [
     BrowserModule,
@@ -38,7 +44,10 @@ import { MatSnackBarModule } from "@angular/material/snack-bar"
     MatListModule,
     MatCardModule,
     MatSnackBarModule,
-    HttpClientModule
+    HttpClientModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

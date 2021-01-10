@@ -10,6 +10,7 @@ import { ProductService } from '../users.service';
 export class UsersReadComponent implements OnInit {
 
   users!: Users[];
+  displayedColumns = ['id', 'name', 'username', 'email']
 
   constructor(private userService: ProductService) { }
 
